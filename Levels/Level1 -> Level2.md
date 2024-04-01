@@ -3,7 +3,9 @@
 https://overthewire.org/wargames/bandit/bandit2.html
 
 ## Level Goal : ##
->The password for the next level is stored in a file called **readme** located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
+>The password for the next level is stored in a file called **-** located in the home directory
+
+
 
 
 
@@ -12,23 +14,19 @@ ls,cd,cat,file,du,find
 #  
 ## PROCEDURE : ##
 
-We're staring off with a very easy task.  Let's just look at the contents of the `readme` file using `cat`.  We can check that we're already in the `home` directory by using `pwd`:
-
+So this is just slightly more challenging than the previous task since we cannot simply use `cat` with the filename since it starts with a `-`. In Linux command options are prefixed with a `-` or `--`, so Linux assumes that any `-` after a command ia a command option or modifier. 
+If we try passing enetering the following command in our terminal;
 ```console
-bandit0@bandit:~$ pwd
-/home/bandit0
+bandit1@bandit:~$ cat -
+
 ```
+The terminal appears to hang.  In reality it's waiting for us to pass on the command option that Linux is expecting to come after the `-`
 
-we can use `ls` to see what files are in this directory and confirm that it does in fact contain a file called `readme`:
-
-```console
-bandit0@bandit:~$ ls
-readme
-```
-
-Now we can use `cat` to look at the contents of the `readme` file:
+Luckily there's a pretty simple work-around for such situations, simply reference the file using the entire file path rather than just the filename.  So in our case rather then using `cat` with `-`, we need to use it with `/home/bandit1/-` (use the `pwd` command if you don't know which directory you're in):
 
 ```console
-bandit0@bandit:~$ cat readme
-NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+bandit1@bandit:~$ pwd
+/home/bandit1
+bandit1@bandit:~$ cat /home/bandit1/-
+rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 ```
