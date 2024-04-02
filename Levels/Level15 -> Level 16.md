@@ -13,8 +13,9 @@ ssh,telnet,nc,openssl,s_client,nmap
 #  
 ## PROCEDURE : ##
 
-For 
+This task is quite similar to the previous one, but since we are told that we need to use SSLE encryption to communicate with `localhost` we'll be using `openssl` instead of `nc` to establish the connection and pass the data. 
 
+From the man page of `openssl` we can see that we need to use the `s_client` command to get our machine to act as a client and connect to a SSL server.
 
 ```console
 bandit15@bandit:~$ man openssl
@@ -25,6 +26,7 @@ bandit15@bandit:~$ man openssl
            library.q
 ```
 
+So now it's just a matter of typing the command in the correct syntax and passing on the password:
 
 ```console
 bandit15@bandit:~$ openssl s_client localhost:30001
