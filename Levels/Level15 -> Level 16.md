@@ -14,3 +14,13 @@ ssh,telnet,nc,openssl,s_client,nmap
 ## PROCEDURE : ##
 
 For 
+
+
+```console
+bandit15@bandit:~$ man openssl
+...
+       s_client
+           This implements a generic SSL/TLS client which can establish a transparent connection to a remote server speaking SSL/TLS. It's intended for
+           testing purposes only and provides only rudimentary interface functionality but internally uses mostly all functionality of the OpenSSL ssl
+           library.q
+```
