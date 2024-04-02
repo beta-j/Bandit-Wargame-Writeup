@@ -17,7 +17,7 @@ A walkthrough and write-up for the Bandit Linux Wargame (https://overthewire.org
 - [Level 10 -> Level 11](Levels/Level10%20->%20Level11.md)
 - [Level 11 -> Level 12](Levels/Level11%20->%20Level12.md)
 - [Level 12 -> Level 13](Levels/Level12%20->%20Level13.md)
-- [Level 13 -> Level 14](Levels/Level130%20->%20Level14.md)
+- [Level 13 -> Level 14](Levels/Level13%20->%20Level14.md)
 - [Level 14 -> Level 15](Levels/Level14%20->%20Level15.md)
 
 
