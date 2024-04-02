@@ -24,3 +24,11 @@ bandit15@bandit:~$ man openssl
            testing purposes only and provides only rudimentary interface functionality but internally uses mostly all functionality of the OpenSSL ssl
            library.q
 ```
+
+
+```console
+bandit15@bandit:~$ openssl s_client localhost:30001
+CONNECTED(00000003)
+...
+read R BLOCK
+
