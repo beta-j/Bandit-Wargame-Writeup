@@ -14,11 +14,13 @@ ssh,telnet,nc,openssl,s_client,nmap
 
 For this challenge we'll be using a new tool called [NetCat]((https://nc110.sourceforge.io/)) which is invoked using the command `nc` on Linux.  Netcat is a relatively simple but extremely versatile tool that allows us to open network connections between devices and pass data between them.
 
-For this task we are told to connect to `localhost` on port `30000`, which we can do quite easily as follows:
+For this task we are told to connect to `localhost` on port `30000`, which we can do quite easily with netcat using the command syntax `nc localhost 30000` and then pasting the password we retrieve from the [previous task](Levels/Level13 -> Level14.md):
 
 ```console
-bandit13@bandit:~$ cd /etc/bandit_pass/bandit14
--bash: cd: /etc/bandit_pass/bandit14: Not a directory
-bandit13@bandit:~$ ls
-sshkey.private
+bandit14@bandit:~$ nc localhost 30000
+fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+Correct!
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 ```
+
+...and that gives us the password for bandit15 😄
