@@ -14,7 +14,8 @@ cat,grep,ls,diff
 #  
 ## PROCEDURE : ##
 
-This is a nice and easy task (at least compared to the previous few) - we just need to compare `password.old` and `password.new` line by line and find the only line that is different.  Luckily we can use the `diff` command to make this super easy:
+This is a nice and easy task (at least compared to the previous few) - we just need to compare `passwords.old` and `passwords.new` line by line and find the only line that is different.  Luckily we can use the `diff` command to make this super easy:
+
 ```console
 bandit17@bandit:~$ diff passwords.new passwords.old
 42c42
@@ -23,4 +24,5 @@ bandit17@bandit:~$ diff passwords.new passwords.old
 > p6ggwdNHncnmCNxuAt0KtKVq185ZU7AW
 ```
 
+The `diff` command is showing us the only two lines that don't match between the two files and these are listed in the same order as we passed the arguments, so in our case the first line is taken from `passwords.new` and the second line is taken from `passwords.old`.  The task tells us that the password we need is in `passwords.new` and therefore we need to copy the first line: `hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg`
 
