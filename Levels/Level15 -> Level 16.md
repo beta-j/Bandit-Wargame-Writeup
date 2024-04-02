@@ -31,4 +31,8 @@ bandit15@bandit:~$ openssl s_client localhost:30001
 CONNECTED(00000003)
 ...
 read R BLOCK
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+Correct!
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
+```
 
