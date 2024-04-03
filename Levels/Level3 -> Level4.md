@@ -2,6 +2,11 @@
 
 https://overthewire.org/wargames/bandit/bandit4.html
 
+## SSH Access Details ##
+**Username:**  bandit3
+
+**Password:**  aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+#
 ## Level Goal : ##
 >The password for the next level is stored in a hidden file in the **inhere** directory.
 
