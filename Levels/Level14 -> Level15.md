@@ -2,6 +2,12 @@
 
 https://overthewire.org/wargames/bandit/bandit15.html
 
+## SSH Access Details ##
+**Username:**  bandit14
+
+**Password:**  fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+#
+
 ## Level Goal : ##
 >The password for the next level can be retrieved by submitting the password of the current level to **port 30000** on **localhost**.
 
