@@ -2,6 +2,13 @@
 
 https://overthewire.org/wargames/bandit/bandit8.html
 
+
+## SSH Access Details ##
+**Username:**  bandit7
+
+**Password:**  z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+#
+
 ## Level Goal : ##
 >The password for the next level is stored in the file **data.txt** next to the word **millionth**
 
