@@ -14,8 +14,16 @@ ssh, nc, cat, bash, screen, tmux, Unix ‘job control’ (bg, fg, jobs, &, CTRL-
 #  
 ## PROCEDURE : ##
 
-We are 
+We are now given an executable binary called `suconnect`.  If we try running it we see that it accepts a single argument which is th eprot number it needs to connect to on `localhost`
 
-And that's it - we have the password for `bandit20`
+```console
+bandit20@bandit:~$ ls
+suconnect
+bandit20@bandit:~$ ./suconnect
+Usage: ./suconnect <portnumber>
+This program will connect to the given port on localhost using TCP. If it receives the correct password from the other side, the next password is transmitted back.
+```
+
+
 
 
