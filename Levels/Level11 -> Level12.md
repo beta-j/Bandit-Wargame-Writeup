@@ -2,6 +2,14 @@
 
 https://overthewire.org/wargames/bandit/bandit12.html
 
+
+## SSH Access Details ##
+**Username:**  bandit11
+
+**Password:**  6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+#
+
+
 ## Level Goal : ##
 >The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
 
