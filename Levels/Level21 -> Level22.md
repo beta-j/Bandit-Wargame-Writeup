@@ -2,6 +2,12 @@
 
 https://overthewire.org/wargames/bandit/bandit22.html
 
+## SSH Access Details ##
+**Username:**  bandit21
+
+**Password:**  NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+#
+
 ## Level Goal : ##
 >A program is running automatically at regular intervals from **cron**, the time-based job scheduler. Look in **/etc/cron.d/** for the configuration and see what command is being executed.
 
