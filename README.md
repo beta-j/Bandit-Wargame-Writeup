@@ -27,6 +27,14 @@ A walkthrough and write-up for the Bandit Linux Wargame (https://overthewire.org
 - [Level 20 -> Level 21](Levels/Level20%20->%20Level21.md)
 - [Level 21 -> Level 22](Levels/Level21%20->%20Level22.md)
 - [Level 22 -> Level 23](Levels/Level22%20->%20Level23.md)
+- [Level 23 -> Level 24](Levels/Level23%20->%20Level24.md)
+- [Level 24 -> Level 25](Levels/Level24%20->%20Level25.md)
+- [Level 25 -> Level 26](Levels/Level25%20->%20Level26.md)
+- [Level 26 -> Level 27](Levels/Level26%20->%20Level27.md)
+- [Level 27 -> Level 28](Levels/Level27%20->%20Level28.md)
+- [Level 28 -> Level 29](Levels/Level28%20->%20Level29.md)
+- [Level 29 -> Level 30](Levels/Level29%20->%20Level30.md)
+- [Level 30 -> Level 31](Levels/Level30%20->%20Level31.md)
 
 
 
