@@ -36,7 +36,7 @@ bandit24@bandit:/tmp/scriptdir$ nano myscript.sh
 ```bash
 #!/bin/bash
 
-for i in {00..99};
+for i in {0000..0099};
 do
   echo $i
 done
@@ -48,19 +48,19 @@ bandit24@bandit:/tmp/scriptdir$ chmod 777 myscript.sh
 
 ```console
 bandit24@bandit:/tmp/scriptdir$ ./myscript.sh
-00
-01
-02
-03
-04
-05
-06
-07
-08
-09
-10
-11
-12
+0000
+0001
+0002
+0003
+0004
+0005
+0006
+0007
+0008
+0009
+0010
+0011
+0012
 ...
 ```
 
