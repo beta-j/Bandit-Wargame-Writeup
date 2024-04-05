@@ -31,10 +31,13 @@ A walkthrough and write-up for the Bandit Linux Wargame (https://overthewire.org
 - [Level 24 -> Level 25](Levels/Level24%20->%20Level25.md) Writing a bash script for a basic brute-force attack
 - [Level 25 -> Level 26](Levels/Level25%20->%20Level26.md) Working with different shells and escaping an unwanted shell
 - [Level 26 -> Level 27](Levels/Level26%20->%20Level27.md) Running executables and dealing with user permissions
-- [Level 27 -> Level 28](Levels/Level27%20->%20Level28.md)
+- [Level 27 -> Level 28](Levels/Level27%20->%20Level28.md) Cloning a git repository
 - [Level 28 -> Level 29](Levels/Level28%20->%20Level29.md)
 - [Level 29 -> Level 30](Levels/Level29%20->%20Level30.md)
 - [Level 30 -> Level 31](Levels/Level30%20->%20Level31.md)
+- [Level 31 -> Level 32](Levels/Level31%20->%20Level32.md)
+- [Level 32 -> Level 33](Levels/Level32%20->%20Level33.md)
+- [Level 33 -> Level 34](Levels/Level33%20->%20Level34.md)
 
 
 
