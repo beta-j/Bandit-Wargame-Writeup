@@ -119,5 +119,44 @@ In this case since `more` is being used to display the ASCII art only which fits
 
 ![image](https://github.com/beta-j/Bandit-Wargame-Writeup/assets/60655500/54c36641-fccf-41db-af04-e33c17740395)
 
-By resizing the terminal window down to just a few lines, and trying to login as `bandit26` again, we now find that `more` is waiting for a user input and we haven't been kicked out yet!
+By resizing the terminal window down to just a few lines, and trying to login as `bandit26` again, we now find that `more` is waiting for a user input and we haven't been kicked out yet!  If we press space a couple more times, however - as expected we are logged out as soon as the full ASCII art is displayed.
+
+![image](https://github.com/beta-j/Bandit-Wargame-Writeup/assets/60655500/bb36c151-b080-4487-a5d0-672855c87cf7)
+
+If only there was a way to escape from inside the `more` user interface.  Let's take a look at the man page for more again:
+
+If we look closely under the "commands" section we find the following:
+```console
+v
+           Start up an editor at current line. The editor is taken from the environment variable VISUAL if defined, or EDITOR if VISUAL is not defined,
+           or defaults to vi(1) if neither VISUAL nor EDITOR is defined.
+```
+
+This means that if we press the `v` key while in `more` the file that `more` is reading from will be opened in `vim` text editor.  `vim` or `vi` is a basic CLI text editor, but it has an interesting feature that allows you to run system commands from inside it - maybe we can use that to our advantage here?
+
+So...once again we try to ssh as `bandit26` using the private key file and with a small terminal window to invoke `more`, but this time, instead of hitting space to scroll through the ASCII art, we hit `v`:
+
+![image](https://github.com/beta-j/Bandit-Wargame-Writeup/assets/60655500/571bfef2-dd45-4681-81ea-fb229a6c3dc8)
+
+You'll notice that there's a new prompt at the bottom of the terminal window now which tells us that we are now inside `vim`!
+Next a quick Google search for "how to change shell from vim" gives loads of useful results.  I'll save you some Googling and tell you that you can use the `:set` command in `vim` to achieve this.  `:set shell?` will tell us what shell we're currently running and `:set shell=/bin/bash` should switch us over to a bash shell.
+
+![image](https://github.com/beta-j/Bandit-Wargame-Writeup/assets/60655500/0ded4fea-59ec-4d02-b7ad-303c8404300b)
+
+Next hit the Esc key and enter the next command `:shell` to launch the bash shell:
+![image](https://github.com/beta-j/Bandit-Wargame-Writeup/assets/60655500/83527d76-25c1-4ec8-8d65-561be7346bc3)
+
+...and we are greeted by a nice bash prompt for `bandit26` - we're in!
+
+At this point it's probably a good idea to get a copy of the password for `bandit26` and keep a record of it in case we need it later:
+```console
+bandit26@bandit:~$ cat /etc/bandit_pass/bandit26
+c7GvcKlw9mC7aUQaPx7nwFstuAIBw1o1
+```
+
+
+
+
+
+
 
