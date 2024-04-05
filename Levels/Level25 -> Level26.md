@@ -19,7 +19,7 @@ ssh, cat, more, vi, ls, id, pwd
 #  
 ## PROCEDURE : ##
 
-If we try to log in over ssh with the credentials for `bandit25`, we appear to be succesfully logged in, but kicked out of the session immediatly.  It seems like we're facing a similar scenario to what we had in [Level18 -> Level19](Levels/Level18 -> Level19.md).
+If we try to log in over ssh with the credentials for `bandit25`, we appear to be succesfully logged in, but kicked out of the session immediatly.  It seems like we're facing a similar scenario to what we had in [Level18 -> Level19](Level18%20->%20Level19.md) .
 
 ```console
 bandit25@bandit:~$ ssh -i bandit26.sshkey bandit26@localhost -p 2220
@@ -70,7 +70,7 @@ Failed to add the host to the list of known hosts (/home/bandit25/.ssh/known_hos
 Connection to localhost closed.
 ```
 
-In Level18 -> Level19 we had used the ssh command with the `-t` switch, so perhaps it's worth tryign that again here:
+In Level18 -> Level19 we had used the ssh command with the `-t` switch, so perhaps it's worth trying that again here:
 
 
 ```console
