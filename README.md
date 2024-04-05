@@ -29,8 +29,8 @@ A walkthrough and write-up for the Bandit Linux Wargame (https://overthewire.org
 - [Level 22 -> Level 23](Levels/Level22%20->%20Level23.md) Dealing with bash scripts
 - [Level 23 -> Level 24](Levels/Level23%20->%20Level24.md) Writing bash scripts
 - [Level 24 -> Level 25](Levels/Level24%20->%20Level25.md) Writing a bash script for a basic brute-force attack
-- [Level 25 -> Level 26](Levels/Level25%20->%20Level26.md)
-- [Level 26 -> Level 27](Levels/Level26%20->%20Level27.md)
+- [Level 25 -> Level 26](Levels/Level25%20->%20Level26.md) Working with different shells and escaping an unwanted shell
+- [Level 26 -> Level 27](Levels/Level26%20->%20Level27.md) Running executables and dealing with user permissions
 - [Level 27 -> Level 28](Levels/Level27%20->%20Level28.md)
 - [Level 28 -> Level 29](Levels/Level28%20->%20Level29.md)
 - [Level 29 -> Level 30](Levels/Level29%20->%20Level30.md)
