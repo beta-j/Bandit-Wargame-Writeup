@@ -38,3 +38,6 @@ File names for hidden files are always prefixed with a `.`.  We can see that our
 bandit3@bandit:~/inhere$ cat .hidden
 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 ```
+#
+[<<< Previous Task (Level2) ](Level2%20->%20Level3.md)|......................................................................................................| [Next Task (Level4) >>>](Level4%20->%20Level5.md)|
+:-|--|-:
