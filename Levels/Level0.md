@@ -55,3 +55,6 @@ discord or IRC.
 
   This machine might hold several wargames.
 ```
+
+#
+<-- Previous Task (Level0)  <div dir="rtl">Next Task (Level1) --></div> 
