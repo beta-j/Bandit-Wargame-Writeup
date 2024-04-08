@@ -26,3 +26,9 @@ The password is 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 ```
 
 Easy! 
+
+
+
+#
+[<<< Previous Task (Level9) ](Level9%20->%20Level10.md)|......................................................................................................| [Next Task (Level11) >>>](Level11%20->%20Level12.md)|
+:-|--|-:
