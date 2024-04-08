@@ -22,11 +22,16 @@ git
 #  
 ## PROCEDURE : ##
 
+This task will introduce us to the `git` command and how to clone into a repository.  `git` is a system that is used for collaboartive coding projects and for version control.  We are told that there is a git repository at `ssh://bandit27-git@localhost/home/bandit27-git/repo` and that this is accessible on port `2220` with the same password we used to log in as `bandit27`.
+
+First we need to create a temporary directory in which we will clone the repository and change it to our current directory:
 
 ```console
 bandit27@bandit:~$ mkdir /tmp/git-temp
 bandit27@bandit:~$ cd /tmp/git-temp
 ```
+
+Now we can clone the repository using the `git clone` command.  Also note how we pass the port number as `:2220` appended to the hostname:
 
 ```console
 bandit27@bandit:/tmp/git-temp$ git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
@@ -55,6 +60,9 @@ remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Receiving objects: 100% (3/3), done.
 ```
 
+This establishes a connection to the git repository over ssh and copies the entire contents to our current directory.
+
+In our case we can see that the repository (called `repo`) contains a single file called `README`, which holds the password for the next level:
 
 ```console
 bandit27@bandit:/tmp/git-temp$ ls
