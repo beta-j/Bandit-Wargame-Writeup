@@ -36,3 +36,7 @@ aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 ```
 
 **NOTE:**  Although it's important to understand how to properly escape spaces in a linux command, in most cases it's easier to simply tab through to the filename and let Linux add the escape characters automatically.  So in our example we can simply type in `cat spa` and press the TAB key and Linux automatically completes the command for us as `cat spaces\ in\ this\ filename`
+
+#
+[<<< Previous Task (Level1) ](Level1%20->%20Level2.md)|......................................................................................................| [Next Task (Level3) >>>](Level3%20->%20Level4.md)|
+:-|--|-:
