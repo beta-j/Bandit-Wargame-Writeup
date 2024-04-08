@@ -78,6 +78,53 @@ Some notes for level29 of bandit.
 - password: xxxxxxxxxx
 ```
 
-So what's happened here?  It looks like at some point someone realised that the `README.md` file contains sensitive information that shouldn't be accessible on the git repository and decied to redact it.  Since `git` has version control functionality we should be able to test this theory by looking at the history of this repository.
+So what's happened here?  It looks like at some point someone realised that the `README.md` file contains sensitive information that shouldn't be accessible on the git repository and decied to redact it.  Since `git` has version control functionality we should be able to test this theory by looking at the history of this repository using the `git log` command:
 
 
+```console
+bandit28@bandit:/tmp/git-temp2/repo$ git log
+commit 14f754b3ba6531a2b89df6ccae6446e8969a41f3 (HEAD -> master, origin/master, origin/HEAD)
+Author: Morla Porla <morla@overthewire.org>
+Date:   Thu Oct 5 06:19:41 2023 +0000
+
+    fix info leak
+
+commit f08b9cc63fa1a4602fb065257633c2dae6e5651b
+Author: Morla Porla <morla@overthewire.org>
+Date:   Thu Oct 5 06:19:41 2023 +0000
+
+    add missing data
+
+commit a645bcc508c63f081234911d2f631f87cf469258
+Author: Ben Dover <noone@overthewire.org>
+Date:   Thu Oct 5 06:19:41 2023 +0000
+
+    initial commit of README.md
+```
+
+From the output of this command we learn that there were three *commits* in this repository.  The first was the '*initial commit*' by an author with a rather dodgy name/surname combination *ahem*
+The second commit was done by a different user and includes the comment "add missing data" which was followed by a third commit to "fix info leak".  This comment in the last commit leads us to the conclusion that the password was redacted in this last commit.  
+
+Now we can simply copy the commit ID and use it with the `git show` command to see what changes where made in that commit:
+
+```console
+bandit28@bandit:/tmp/git-temp2/repo$ git show 14f754b3ba6531a2b89df6ccae6446e8969a41f3
+commit 14f754b3ba6531a2b89df6ccae6446e8969a41f3 (HEAD -> master, origin/master, origin/HEAD)
+Author: Morla Porla <morla@overthewire.org>
+Date:   Thu Oct 5 06:19:41 2023 +0000
+
+    fix info leak
+
+diff --git a/README.md b/README.md
+index b302105..5c6457b 100644
+--- a/README.md
++++ b/README.md
+@@ -4,5 +4,5 @@ Some notes for level29 of bandit.
+ ## credentials
+
+ - username: bandit29
+-- password: tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S
++- password: xxxxxxxxxx
+```
+
+Just as we expected, the password for `bandit29` was changed to `xxxxxxxxxx` from `tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S`
