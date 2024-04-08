@@ -57,4 +57,5 @@ discord or IRC.
 ```
 
 #
-<-- Previous Task (Level0)  <div dir="rtl">Next Task (Level1) --></div> 
+<p align="left"><-- Previous Task (Level0)</p>
+<a href="Level0%20->%20Level1.md"  align="right">Next Task (Level1) >>></a>
