@@ -39,5 +39,5 @@ In this case we are using `-c` with uniq to print out the number of times each l
 
 
 #
-[<<< Previous Task (Level6) ](Level6%20->%20Level7.md)|......................................................................................................| [Next Task (Level8) >>>](Level8%20->%20Level9.md)|
+[<<< Previous Task (Level7) ](Level7%20->%20Level8.md)|......................................................................................................| [Next Task (Level9) >>>](Level9%20->%20Level10.md)|
 :-|--|-:
