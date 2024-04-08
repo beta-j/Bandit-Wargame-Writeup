@@ -88,5 +88,25 @@ Now we know that the repository includes the following branches:
 - `dev`
 - `sploits-dev`
 
-`dev` is most probably short for **development**.
+`dev` is most probably short for **development**, so that is most likely the branch that is most interesting to us.  We can use `git checkout` to switch to different branches of the repository:
 
+```console
+bandit29@bandit:/tmp/git-temp3/repo$ git checkout dev
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+```
+
+Now we can try looking at the contents of `README.md` again:
+
+```console
+bandit29@bandit:/tmp/git-temp3/repo$ cat README.md
+# Bandit Notes
+Some notes for bandit30 of bandit.
+
+## credentials
+
+- username: bandit30
+- password: xbhV3HpNGlTIdnjUrdAlPzc2L6y9EOnS
+```
+
+And there we have it! The password for `bandit30` is stored in the `README.md` file of the `dev` branch.
