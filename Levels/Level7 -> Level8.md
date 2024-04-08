@@ -35,3 +35,11 @@ millionth       TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 ```
 
 In both cases, the output is identical but it is handy to know how to use both methods as these might come in useful in different scenarios.
+
+
+
+
+
+#
+[<<< Previous Task (Level6) ](Level6%20->%20Level7.md)|......................................................................................................| [Next Task (Level8) >>>](Level8%20->%20Level9.md)|
+:-|--|-:
