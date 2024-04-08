@@ -68,6 +68,11 @@ Some notes for bandit30 of bandit.
 - password: <no passwords in production!>
 ```
 
+This time the way the password is redacted is a bit different to what we saw in the [previous level](Level28%20->%20Level29.md). Rather than being redacted with a `xxxxxxxxxxxxxx` string, we have a message saying `<no passwords in production!>`.  Hmmm...OK, so if there are no passwords in production, maybe they are somewhere else instead?
+
+This brings us to the subject of **Git Branching**.  This is another form of version control that is provided by Git which allows us to *fork* the project into several different branches.  This allows for teams of developers to simultaneously work on different features and enhancements on the main code, while leaving it untouched and operational.  ***Production*** generally refers to the code/environment that is 'live', whereas the actual coding and testing is usually done in what is referred to as a ***Development*** or ***Staging*** environmnet.  So the message in `README.md` leads us to believe that perhaps there is a development branch in this git repository that might just contain the password.
+
+We can see a list of branches by using the `git branch` command.  `git branch` on its own gives us a list of locally stored branches, but if we add the `-a` switch we get a list of all remote branches
 
 ```console
 bandit29@bandit:/tmp/git-temp3/repo$ git branch -a
@@ -77,3 +82,11 @@ bandit29@bandit:/tmp/git-temp3/repo$ git branch -a
   remotes/origin/master
   remotes/origin/sploits-dev
 ```
+
+Now we know that the repository includes the following branches:
+- `master` (also referred to as `HEAD`)
+- `dev`
+- `sploits-dev`
+
+`dev` is most probably short for **development**.
+
