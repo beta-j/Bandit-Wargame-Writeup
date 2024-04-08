@@ -33,5 +33,5 @@ bandit0@bandit:~$ cat readme
 NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 ```
 #
-[<<< Previous Task (Level0) ](Level0.md)|......................................................................| [Next Task (Level0) >>>](Level0%21->%20Level2.md)|
+[<<< Previous Task (Level0) ](Level0.md)|......................................................................| [Next Task (Level1) >>>](Level0%21->%20Level2.md)|
 :-|--|-:
