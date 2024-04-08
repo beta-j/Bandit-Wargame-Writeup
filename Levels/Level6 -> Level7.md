@@ -44,3 +44,8 @@ There it is - the file we want is conveniently named `bandit7.password` and is l
 bandit6@bandit:~$ cat /var/lib/dpkg/info/bandit7.password
 z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 ```
+
+
+#
+[<<< Previous Task (Level5) ](Level5%20->%20Level6.md)|......................................................................................................| [Next Task (Level7) >>>](Level7%20->%20Level8.md)|
+:-|--|-:
