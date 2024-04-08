@@ -78,3 +78,6 @@ Some notes for level29 of bandit.
 - password: xxxxxxxxxx
 ```
 
+So what's happened here?  It looks like at some point someone realised that the `README.md` file contains sensitive information that shouldn't be accessible on the git repository and decied to redact it.  Since `git` has version control functionality we should be able to test this theory by looking at the history of this repository.
+
+
