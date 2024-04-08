@@ -44,3 +44,7 @@ In any case, now that we know which file contains our password and which directo
 bandit5@bandit:~/inhere$ cat maybehere07/.file2
 P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 ```
+
+#
+[<<< Previous Task (Level4) ](Level4%20->%20Level5.md)|......................................................................................................| [Next Task (Level6) >>>](Level6%20->%20Level7.md)|
+:-|--|-:
