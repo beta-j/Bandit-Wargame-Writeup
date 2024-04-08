@@ -42,3 +42,10 @@ to
 `[nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM]`
 
 the `-` character simply allows us to abbreviate a string of subsequent alphabet letters to make our command more manageable.
+
+
+
+
+#
+[<<< Previous Task (Level10) ](Level10%20->%20Level11.md)|......................................................................................................| [Next Task (Level12) >>>](Level12%20->%20Level13.md)|
+:-|--|-:
