@@ -47,3 +47,7 @@ From the output we can see that only `-file07` is an **ASCII text** file and the
 bandit4@bandit:~/inhere$ cat /home/bandit4/inhere/-file07
 lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 ```
+
+#
+[<<< Previous Task (Level3) ](Level3%20->%20Level4.md)|......................................................................................................| [Next Task (Level5) >>>](Level5%20->%20Level6.md)|
+:-|--|-:
