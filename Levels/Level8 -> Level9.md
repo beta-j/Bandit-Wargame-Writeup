@@ -35,3 +35,9 @@ bandit8@bandit:~$ sort data.txt | uniq -c | grep "1 "
 ```
 
 In this case we are using `-c` with uniq to print out the number of times each line is repeated and then using grep to find lines that contain `1 ` (note the space after the `1`) to identify which line is unique.
+
+
+
+#
+[<<< Previous Task (Level6) ](Level6%20->%20Level7.md)|......................................................................................................| [Next Task (Level8) >>>](Level8%20->%20Level9.md)|
+:-|--|-:
