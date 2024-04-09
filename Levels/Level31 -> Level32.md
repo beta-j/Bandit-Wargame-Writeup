@@ -52,6 +52,7 @@ remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
 Receiving objects: 100% (4/4), done.
 ```
 
+Once again we have a `README.md` file - but this time it looks like it contains some instructions for us!
 
 ```console
 bandit31@bandit:/tmp/git-temp5$ cd repo
@@ -66,18 +67,19 @@ Details:
     Branch: master
 ```
 
+So we need to create a file called `key.txt` which contains the text `May I come in?` and then push this file to the git repository under the `master` branch.
+
+We can start by creating the text file:
+
 ```console
 bandit31@bandit:/tmp/git-temp5/repo$ touch key.txt
 bandit31@bandit:/tmp/git-temp5/repo$ echo "May I come in?" > key.txt
 ```
 
+Now we can add the file to git using `git add` and commit it to the repository using `git commit -m`.  Note that every commit reuqires a message describing what the commit is for.  The `-m` switch allows us to pass this message as part fo the `commit` command:
+
 ```console
 bandit31@bandit:/tmp/git-temp5/repo$ git add key.txt
-bandit31@bandit:/tmp/git-temp5/repo$ git commit
-Unable to create directory /home/bandit31/.local/share/nano/: No such file or directory
-It is required for saving/loading search history or cursor positions.
-
-Aborting commit due to empty commit message.
 bandit31@bandit:/tmp/git-temp5/repo$ git commit -m "added key.txt"
 [master 3f9c574] added key.txt
  1 file changed, 1 insertion(+)
