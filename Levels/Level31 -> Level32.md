@@ -76,14 +76,48 @@ bandit31@bandit:/tmp/git-temp5/repo$ touch key.txt
 bandit31@bandit:/tmp/git-temp5/repo$ echo "May I come in?" > key.txt
 ```
 
-Now we can add the file to git using `git add` and commit it to the repository using `git commit -m`.  Note that every commit reuqires a message describing what the commit is for.  The `-m` switch allows us to pass this message as part fo the `commit` command:
+Before committing the file we shoudl verify that we're in the correct branch of the repository (i.e. `master`) using the `git branch` command:
+
+```console
+bandit31@bandit:/tmp/git-temp5/repo$ git branch
+* master
+```
+
+Now that we've confirmed that we're in the `master` branch we can add `key.txt` to the repository using `git add`:
 
 ```console
 bandit31@bandit:/tmp/git-temp5/repo$ git add key.txt
+The following paths are ignored by one of your .gitignore files:
+key.txt
+hint: Use -f if you really want to add them.
+hint: Turn this message off by running
+hint: "git config advice.addIgnoredFile false"
+```
+
+We are presented with an error saying that we are not allowed to add the file due to rules in `.gitignore`.  We can check what these rules are by lookign inside the `.gitignore` file:
+
+```console
+bandit31@bandit:/tmp/git-temp5/repo$ cat .gitignore
+*.txt
+```
+`.gitignore` is a special file that instructs a repository not to update specific files.  In this case, it is stopping the upload of any file with a `.txt` extension.  In order to go around this we can either edit `.gitignore` and remove the `*.txt` line, or delete the `.gitignore` file entirely, but in theory this would affect all future git commits.  A better way of doing this is to follow the advice given by the error message and using the `-f` switch in our commit command:
+
+```console
+bandit31@bandit:/tmp/git-temp55/repo$ git add key.txt -f
+```
+
+Now we can commit our changes to the repository using `git commit -m`.  Note that every commit reuqires a message describing what the commit is for.  The `-m` switch allows us to pass this message as part fo the `commit` command:
+
+```console
 bandit31@bandit:/tmp/git-temp5/repo$ git commit -m "added key.txt"
 [master 3f9c574] added key.txt
  1 file changed, 1 insertion(+)
  create mode 100644 key.txt
+```
+
+
+And finally push our changes to the remote repository:
+```console
 bandit31@bandit:/tmp/git-temp5/repo$ git push origin master
 The authenticity of host '[localhost]:2220 ([127.0.0.1]:2220)' can't be established.
 ED25519 key fingerprint is SHA256:C2ihUBV7ihnV1wUXRb4RrEcLfXC5CXlhmAAM/urerLY.
@@ -122,3 +156,5 @@ To ssh://localhost:2220/home/bandit31-git/repo
 error: failed to push some refs to 'ssh://localhost:2220/home/bandit31-git/repo'
 bandit31@bandit:/tmp/git-temp5/repo$
 ```
+
+Once we push our updates to the remote repository we are presented with an automated message with the password for the next level.
