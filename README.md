@@ -34,7 +34,7 @@ A walkthrough and write-up for the Bandit Linux Wargame (https://overthewire.org
 - [Level 27 -> Level 28](Levels/Level27%20->%20Level28.md) Cloning a git repository
 - [Level 28 -> Level 29](Levels/Level28%20->%20Level29.md) Looking through the history of a git repository
 - [Level 29 -> Level 30](Levels/Level29%20->%20Level30.md) Navigating through git branches
-- [Level 30 -> Level 31](Levels/Level30%20->%20Level31.md)
+- [Level 30 -> Level 31](Levels/Level30%20->%20Level31.md) Git tagging
 - [Level 31 -> Level 32](Levels/Level31%20->%20Level32.md)
 - [Level 32 -> Level 33](Levels/Level32%20->%20Level33.md)
 - [Level 33 -> Level 34](Levels/Level33%20->%20Level34.md)
