@@ -60,6 +60,8 @@ bandit30@bandit:/tmp/git-temp4/repo$ cat README.md
 just an epmty file... muahaha
 ```
 
+This time if we look at the outputs of `git log` and `git branch -a` we don't get any useful information.  There's only one commit and the amster branch.
+
 ```console
 bandit30@bandit:/tmp/git-temp4/repo$ git log
 commit d39631d73f786269b895ae9a7b14760cbf40a99f (HEAD -> master, origin/master, origin/HEAD)
@@ -72,3 +74,14 @@ bandit30@bandit:/tmp/git-temp4/repo$ git branch -a
   remotes/origin/HEAD -> origin/master
   remotes/origin/master
 ```
+
+Perhaps we can learn something from the output of `git tag`, since git has the ability to tag specific points of a repository's history.
+
+```console
+bandit30@bandit:/tmp/git-temp4/repo$ git tag
+secret
+bandit30@bandit:/tmp/git-temp4/repo$ git show secret
+OoffzGDlzhAlerFJ2cAiz1D41JW1Mhmt
+```
+
+We see there's a tag called `secret` and it's contents look very much like a password for the next level 😄
