@@ -60,3 +60,15 @@ bandit30@bandit:/tmp/git-temp4/repo$ cat README.md
 just an epmty file... muahaha
 ```
 
+```console
+bandit30@bandit:/tmp/git-temp4/repo$ git log
+commit d39631d73f786269b895ae9a7b14760cbf40a99f (HEAD -> master, origin/master, origin/HEAD)
+Author: Ben Dover <noone@overthewire.org>
+Date:   Thu Oct 5 06:19:45 2023 +0000
+
+    initial commit of README.md
+bandit30@bandit:/tmp/git-temp4/repo$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+```
