@@ -30,3 +30,9 @@ jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 ```
 
 ...and that gives us the password for bandit15 😄
+
+
+
+#
+[<<< Previous Task (Level13) ](Level13%20->%20Level14.md)|......................................................................................................| [Next Task (Level15) >>>](Level15%20->%20Level16.md)|
+:-|--|-:
