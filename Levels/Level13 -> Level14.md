@@ -78,3 +78,6 @@ bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
 fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 ```
 
+#
+[<<< Previous Task (Level12) ](Level12%20->%20Level13.md)|......................................................................................................| [Next Task (Level14) >>>](Level14%20->%20Level15.md)|
+:-|--|-:
