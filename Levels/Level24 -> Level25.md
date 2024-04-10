@@ -108,3 +108,6 @@ Correct!
 The password of user bandit25 is p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d
 ```
 
+#
+[<<< Previous Task (Level23) ](Level23%20->%20Level24.md)|......................................................................................................| [Next Task (Level25) >>>](Level25%20->%20Level26.md)|
+:-|--|-:
