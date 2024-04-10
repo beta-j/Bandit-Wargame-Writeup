@@ -81,3 +81,9 @@ QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
 ```
 
 And - as expected - it contains the password for `bandit23`.
+
+
+#
+[<<< Previous Task (Level21) ](Level21%20->%20Level22.md)|......................................................................................................| [Next Task (Level23) >>>](Level23%20->%20Level24.md)|
+:-|--|-:
+
