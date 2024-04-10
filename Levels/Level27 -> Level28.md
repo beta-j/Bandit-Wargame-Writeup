@@ -73,3 +73,8 @@ bandit27@bandit:/tmp/git-temp$ cat repo/README
 The password to the next level is: AVanL161y9rsbcJIsFHuw35rjaOM19nR
 ```
 
+
+
+#
+[<<< Previous Task (Level26) ](Level26%20->%20Level27.md)|......................................................................................................| [Next Task (Level28) >>>](Level28%20->%20Level29.md)|
+:-|--|-:
