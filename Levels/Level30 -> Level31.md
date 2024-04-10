@@ -85,3 +85,9 @@ OoffzGDlzhAlerFJ2cAiz1D41JW1Mhmt
 ```
 
 We see there's a tag called `secret` and it's contents look very much like a password for the next level 😄
+
+
+#
+[<<< Previous Task (Level29) ](Level29%20->%20Level30.md)|......................................................................................................| [Next Task (Level31) >>>](Level31%20->%20Level32.md)|
+:-|--|-:
+
