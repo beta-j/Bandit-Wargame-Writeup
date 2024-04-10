@@ -158,3 +158,9 @@ bandit31@bandit:/tmp/git-temp5/repo$
 ```
 
 Once we push our updates to the remote repository we are presented with an automated message with the password for the next level.
+
+
+#
+[<<< Previous Task (Level30) ](Level30%20->%20Level31.md)|......................................................................................................| [Next Task (Level32) >>>](Level32%20->%20Level33.md)|
+:-|--|-:
+
