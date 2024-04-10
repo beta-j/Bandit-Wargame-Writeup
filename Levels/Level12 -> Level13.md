@@ -123,3 +123,8 @@ So the file we were given at the start of the task was the result of the followi
 data8 --gzip--> --tar--> --bzip2--> --tar--> --tar--> --gzip--> --bzip2--> --gzip--> --xxd Hexdump--> data.txt
 
 someone must have really wanted to compress this file!
+
+
+#
+[<<< Previous Task (Level11) ](Level11%20->%20Level12.md)|......................................................................................................| [Next Task (Level13) >>>](Level13%20->%20Level14.md)|
+:-|--|-:
