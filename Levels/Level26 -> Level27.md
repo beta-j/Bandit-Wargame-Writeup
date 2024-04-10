@@ -43,3 +43,10 @@ YnQpBuifNMas1hcUFk70ZmqkhUU2EuaS
 ```
 
 Yup - there it is - easy!
+
+
+
+
+#
+[<<< Previous Task (Level25) ](Level25%20->%20Level26.md)|......................................................................................................| [Next Task (Level27) >>>](Level27%20->%20Level28.md)|
+:-|--|-:
