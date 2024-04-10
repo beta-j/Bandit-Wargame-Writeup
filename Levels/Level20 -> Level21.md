@@ -48,4 +48,8 @@ bandit20@bandit:~$ NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
 ```
 
 
+#
+[<<< Previous Task (Level19) ](Level19%20->%20Level20.md)|......................................................................................................| [Next Task (Level21) >>>](Level21%20->%20Level22.md)|
+:-|--|-:
+
 
