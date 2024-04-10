@@ -128,3 +128,8 @@ index b302105..5c6457b 100644
 ```
 
 Just as we expected, the password for `bandit29` was changed to `xxxxxxxxxx` from `tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S`
+
+
+#
+[<<< Previous Task (Level27) ](Level27%20->%20Level28.md)|......................................................................................................| [Next Task (Level29) >>>](Level29%20->%20Level30.md)|
+:-|--|-:
