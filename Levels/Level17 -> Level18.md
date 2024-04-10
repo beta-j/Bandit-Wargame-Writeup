@@ -32,3 +32,6 @@ bandit17@bandit:~$ diff passwords.new passwords.old
 
 The `diff` command is showing us the only two lines that don't match between the two files and these are listed in the same order as we passed the arguments, so in our case the first line is taken from `passwords.new` and the second line is taken from `passwords.old`.  The task tells us that the password we need is in `passwords.new` and therefore we need to copy the first line: `hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg`
 
+#
+[<<< Previous Task (Level16) ](Level16%20->%20Level17.md)|......................................................................................................| [Next Task (Level18) >>>](Level18%20->%20Level19.md)|
+:-|--|-:
