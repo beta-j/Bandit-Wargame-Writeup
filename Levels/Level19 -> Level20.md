@@ -56,4 +56,7 @@ VxCazJaVykI6W36BkBU0mJTCM8rR95XT
 
 And that's it - we have the password for `bandit20`
 
+#
+[<<< Previous Task (Level18) ](Level18%20->%20Level19.md)|......................................................................................................| [Next Task (Level20) >>>](Level20%20->%20Level21.md)|
+:-|--|-:
 
