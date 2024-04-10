@@ -78,3 +78,6 @@ C:\Users\james>ssh bandit18@bandit.labs.overthewire.org -p 2220 -t "cat readme"
 bandit18@bandit.labs.overthewire.org's password:
 awhqfNnAbc1naukrpqDYcF95h7HoMTrC
 ```
+#
+[<<< Previous Task (Level17) ](Level17%20->%20Level18.md)|......................................................................................................| [Next Task (Level19) >>>](Level19%20->%20Level20.md)|
+:-|--|-:
