@@ -110,3 +110,9 @@ Some notes for bandit30 of bandit.
 ```
 
 And there we have it! The password for `bandit30` is stored in the `README.md` file of the `dev` branch.
+
+
+
+#
+[<<< Previous Task (Level28) ](Level28%20->%20Level29.md)|......................................................................................................| [Next Task (Level30) >>>](Level31%20->%20Level31.md)|
+:-|--|-:
