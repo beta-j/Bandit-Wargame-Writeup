@@ -57,6 +57,26 @@ Command '-bash' not found, did you mean:
 Try: apt install <deb name>
 ```
 
+```console
+bandit33@bandit:~$ ls
+uppershell
+bandit33@bandit:~$ cd home
+bash: cd: home: No such file or directory
+bandit33@bandit:~$ pwd
+/home/bandit32
+bandit33@bandit:~$ ls -la
+total 36
+drwxr-xr-x  2 root     root      4096 Oct  5  2023 .
+drwxr-xr-x 70 root     root      4096 Oct  5  2023 ..
+-rw-r--r--  1 root     root       220 Jan  6  2022 .bash_logout
+-rw-r--r--  1 root     root      3771 Jan  6  2022 .bashrc
+-rw-r--r--  1 root     root       807 Jan  6  2022 .profile
+-rwsr-x---  1 bandit33 bandit32 15128 Oct  5  2023 uppershell
+bandit33@bandit:~$ whoami
+bandit33
+bandit33@bandit:~$ cat /etc/bandit_pass/bandit33
+odHo63fHiFqcWWJG9rLiLDtPm45KzUKy
+```
 
 #
 [<<< Previous Task (Level31) ](Level31%20->%20Level32.md)|
