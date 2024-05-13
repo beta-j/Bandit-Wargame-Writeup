@@ -60,7 +60,7 @@ bandit30@bandit:/tmp/git-temp4/repo$ cat README.md
 just an epmty file... muahaha
 ```
 
-This time if we look at the outputs of `git log` and `git branch -a` we don't get any useful information.  There's only one commit and the amster branch.
+This time if we look at the outputs of `git log` and `git branch -a` we don't get any useful information.  There's only one commit and the master branch.
 
 ```console
 bandit30@bandit:/tmp/git-temp4/repo$ git log
